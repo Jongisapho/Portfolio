@@ -1,6 +1,6 @@
 <template>
     <header class="flex justify-between p-6 bg-opacity-50 bg-slate-950 relative z-20">
-        <div class="text-3xl font-bold bg-white bg-clip-text text-transparent">
+        <div class="text-3xl transition-all duration-500 hover:text-blue-400 font-bold bg-white bg-clip-text text-transparent">
             Dev <span class="font-black"> Portfolio </span>
         </div>
         <div class="md:hidden z-30 ">
@@ -50,7 +50,7 @@
                 </li>
             </ul>
             <div class="mt-6 md:mt-0 md:ml-7 ">
-                <button class="px-6 py-2.5 bg-linear-to-r from-blue-500 to-cyan-500 text-white rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105">
+                <button class="px-6 py-2.5 bg-linear-to-r from-blue-400 via-red-200 to-cyan-600 text-white tex-bold rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105">
                     Let's Talk
                 </button>
             </div>
@@ -60,6 +60,7 @@
 </template>
 
 <script setup>
+
 import { ref } from 'vue';
 
 const Menu = ref([
