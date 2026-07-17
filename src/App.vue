@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-linear-to-br from-cyan-700 via-gray-200 to-cyan-300">
+  <div class="min-h-screen bg-white">
     <Navbar />
   </div>
 </template>
