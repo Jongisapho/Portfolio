@@ -1,5 +1,6 @@
 <template>
   <div class="min-h-screen bg-white">
+    
     <Navbar />
     <Hero />
   </div>
@@ -12,7 +13,7 @@ import Hero from './components/Hero.vue';
 import Navbar from './components/Navbar.vue';
 
 
-import { ref, nextTick, onMounted } from 'vue';
+import { ref, nextTick, onMounted, onUnmounted } from 'vue';
 
 
 export default {
@@ -21,6 +22,14 @@ export default {
     Hero
   },
   setup() {
+    const windowWidth = ref(typeof window !== 'undefined' ? window.innerWidth : 1024)
+
+    const handleResize = () => {
+      windowWidth.value = window.innerWidth
+    }
+
+    onMounted(() => window.addEventListener('resize', handleResize))
+    onUnmounted(() => window.removeEventListener('resize', handleResize))
     const loading = ref(true)
 
     onMounted(async () => {
@@ -37,7 +46,7 @@ export default {
         loading.value = false;
       }, 800);
     });
-    return {loading};
+    return {loading, windowWidth};
   }
 }
 </script>
