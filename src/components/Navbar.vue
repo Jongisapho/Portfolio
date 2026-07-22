@@ -1,7 +1,7 @@
 <template>
-    <header class="flex justify-between p-6 bg-opacity-50 bg-white relative z-20">
-        <div class="text-3xl transition-all duration-500 hover:text-blue-400 font-bold bg-slate-950 bg-clip-text text-transparent">
-            Dev <span class="font-black"> Portfolio </span>
+    <header class="flex justify-between p-6 bg-opacity-50 bg-slate-950 relative z-20">
+        <div class="text-3xl transition-all duration-500 hover:text-blue-400 font-bold bg-white bg-clip-text text-transparent">
+            My<span class="font-black"> Portfolio </span>
         </div>
         <div class="md:hidden z-30  ">
             <button type="button" class="group block focus:outline-none p-2 border border-slate-300 hover:border-white rounded-lg bg-white
@@ -39,7 +39,7 @@
                 <li v-for="item in Menu" :key="item.name" class="group relative">
                     <a :href="item.href"
                     class="relative inline-block text-blue-100 group-hover:text-blue-300
-                    transition-all duration-300 text-xl md:text-slate-950 md:text-base font-medium
+                    transition-all duration-300 text-xl md:text-white md:text-base font-medium
                     group"
                     @click="scrollToSection(item.href)">
                     {{ item.name }}
@@ -51,9 +51,7 @@
                 </li>
             </ul>
             <div class="mt-6 md:mt-0 md:ml-7 ">
-                <button class="px-6 py-2.5 bg-linear-to-r from-blue-400 via-red-200 to-cyan-600 text-white tex-bold rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105">
-                    Let's Talk
-                </button>
+                <CustomButton label="Let's Talk" variant="nav" @click="handleLetsTalk" />
             </div>
 
         </nav>
@@ -63,6 +61,7 @@
 <script setup>
 
 import { ref } from 'vue';
+import CustomButton from './CustomButton.vue';
 
 const Menu = ref([
     { name: 'Services', href: '#services' },

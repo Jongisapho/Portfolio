@@ -1,7 +1,7 @@
 <template>
     <button
         :class="[
-            'px-8 md:px-10 md:py-2 py-3 roundedd-full relative group w-full sm:w-max flex justify-center overflow-hidden transition-all duration-300 hover:scale-105',
+            'px-8 md:px-10 md:py-2 py-3 rounded-full relative group w-full sm:w-max flex justify-center overflow-hidden transition-all duration-300 hover:scale-105',
             variant === 'primary' ? 'bg-linear-to-r from-blue-400 via-red-200 to-cyan-600' : '',
             variant === 'secondary' ? 'bg-linear-to-r from-cyan-400 via-red-200 to-blue-600': '',
             variant === 'nav' ? 'bg-linear-to-r from-blue-400 via-red-200 to-cyan-600': '',
