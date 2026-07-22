@@ -3,7 +3,7 @@
         <div class="text-white w-full max-w-5xl lg:max-w-7xl mx-auto relative z-10">
             <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
                 <div class="flex flex-col justify-center lg:-mt-40 mt-5 p-5">
-                    <div class="text-white lg:text-left" data-aos="fade-right">
+                    <div class="text-white lg:text-center" data-aos="fade-right">
                     <h1 class="font-bold md:text-4xl text-5xl">
                         Hello, I'm
                         <span
@@ -12,15 +12,15 @@
 
                     </h1>
                     <p class="font-medium text-xl md:text-xl mt-5" data-aos="fade-right" data-aos-delay="500">
-                        Computer Scientist | Software Developer | AI & Machine Learning
+                        Computer Scientist | Software Developer | AI & ML Engineering
                     </p>
                 </div>
-                <p class="text-gray-200 mx-auto max-w-xl text-lg leading-relaxed mt-10 mr-10">
+                <p class="text-gray-200 text-center mx-auto max-w-xl text-lg leading-relaxed mt-10 mr-10 lg:mx-0">
                     I am a Computer Science graduate, A Computer Science Honours student with an obession for Software Engineering, Machine Learning and Natural Language Processing.
                     I enjoy building blazing-fast, scalable full-stack applications.
                     I love writing clean, efficient code that solves real problems and I do it with focus, speed and enthusiasm.
                 </p>
-                <div class="flex items-center gap-4 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0 mt-10"
+                <div class="flex items-center gap-4 flex-col sm:flex-row sm:w-max sm:mx-auto mt-10"
                     data-aos="fade-up" data-aos-delay="300">
                     <CustomButton
                         label="Contact me"
