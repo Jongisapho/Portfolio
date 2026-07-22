@@ -1,8 +1,8 @@
 <template>
   <div class="min-h-screen bg-white">
-    
     <Navbar />
     <Hero />
+    <Services />
   </div>
 </template>
 <script>
@@ -11,6 +11,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Hero from './components/Hero.vue';
 import Navbar from './components/Navbar.vue';
+import Services from './components/Services.vue';
 
 
 import { ref, nextTick, onMounted, onUnmounted } from 'vue';
@@ -19,7 +20,8 @@ import { ref, nextTick, onMounted, onUnmounted } from 'vue';
 export default {
   components : {
     Navbar,
-    Hero
+    Hero,
+    Services
   },
   setup() {
     const windowWidth = ref(typeof window !== 'undefined' ? window.innerWidth : 1024)
