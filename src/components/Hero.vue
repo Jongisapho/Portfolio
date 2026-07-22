@@ -12,11 +12,12 @@
 
                     </h1>
                     <p class="font-medium text-xl md:text-xl mt-5" data-aos="fade-right" data-aos-delay="500">
-                        Computer Science | Software Developer | AI & Machine Learning
+                        Computer Scientist | Software Developer | AI & Machine Learning
                     </p>
                 </div>
                 <p class="text-gray-200 mx-auto max-w-xl text-lg leading-relaxed mt-10 mr-10">
-                    I am a Computer Science graduate, A Computer Science Honours student with an obession for Software Engineering, Machine Learning, Natural Language Processing and building blazing-fast, scalable full-stack applications.
+                    I am a Computer Science graduate, A Computer Science Honours student with an obession for Software Engineering, Machine Learning and Natural Language Processing.
+                    I enjoy building blazing-fast, scalable full-stack applications.
                     I love writing clean, efficient code that solves real problems and I do it with focus, speed and enthusiasm.
                 </p>
                 <div class="flex items-center gap-4 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0 mt-10"
