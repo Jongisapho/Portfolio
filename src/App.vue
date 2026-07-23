@@ -12,6 +12,7 @@ import 'aos/dist/aos.css';
 import Hero from './components/Hero.vue';
 import Navbar from './components/Navbar.vue';
 import Services from './components/Services.vue';
+import About from './components/About.vue';
 
 
 import { ref, nextTick, onMounted, onUnmounted } from 'vue';
@@ -21,7 +22,8 @@ export default {
   components : {
     Navbar,
     Hero,
-    Services
+    Services,
+    About
   },
   setup() {
     const windowWidth = ref(typeof window !== 'undefined' ? window.innerWidth : 1024)
