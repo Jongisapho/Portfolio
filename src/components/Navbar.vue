@@ -4,7 +4,7 @@
             My<span class="font-black"> Portfolio </span>
         </div>
         <div class="md:hidden z-30">
-            <button type="button" class="group block focus:outline-none p-2 border border-blue-500 hover:border-white rounded-lg bg-slate-950
+            <button type="button" class="group block focus:outline-none p-2.5 py-2.5 border-2 border-blue-500 hover:border-white rounded-lg bg-slate-950
                 hover:bg-blue-500 transition-all duration-300 " @click="isMenuOpen = !isMenuOpen">
                 <div class="relative w-6 h-6">
                     <span :class="[
