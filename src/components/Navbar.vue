@@ -1,28 +1,28 @@
 <template>
     <header class="flex justify-between p-6 bg-opacity-50 bg-slate-950 relative z-20">
-        <div class="text-3xl transition-all duration-500 hover:text-blue-400 font-bold bg-white bg-clip-text text-transparent">
+        <div class="text-3xl transition-all duration-500 hover:text-blue-500 font-bold bg-white bg-clip-text text-transparent">
             My<span class="font-black"> Portfolio </span>
         </div>
-        <div class="md:hidden z-30  ">
-            <button type="button" class="group block focus:outline-none p-2 border border-slate-300 hover:border-white rounded-lg bg-white
-                hover:bg-blue-400 transition-all duration-300" @click="isMenuOpen = !isMenuOpen">
+        <div class="md:hidden z-30">
+            <button type="button" class="group block focus:outline-none p-2 border border-blue-500 hover:border-white rounded-lg bg-slate-950
+                hover:bg-blue-500 transition-all duration-300 " @click="isMenuOpen = !isMenuOpen">
                 <div class="relative w-6 h-6">
                     <span :class="[
-                        `absolute left-0 w-6 h-0.5 bg-slate-800 transition-all
+                        `absolute left-0 w-6 h-0.5 bg-blue-500 transition-all
                         duration-300 group-hover:bg-white`,
-                        isMenuOpen ? 'rotate-45 top-3 ' : 'top-1'
+                        isMenuOpen ? 'rotate-45 top-3' : 'top-1'
                     ]">
                     </span>
                     <span :class="[
-                        `absolute left-0 w-6 h-0.5 bg-slate-800 transition-all
+                        `absolute left-0 w-6 h-0.5 bg-blue-500 transition-all
                         duration-300 group-hover:bg-white`,
                         isMenuOpen ? 'opacity-0' : 'top-3 opacity-100'
                     ]">
                     </span>
                     <span :class="[
-                        `absolute left-0 w-6 h-0.5 bg-slate-800 transition-all
+                        `absolute left-0 w-6 h-0.5 bg-blue-500 transition-all
                         duration-300 group-hover:bg-white`,
-                        isMenuOpen ? '-rotate-45 top-3 ' : 'top-5'
+                        isMenuOpen ? '-rotate-45 top-3' : 'top-5'
                     ]">
                     </span>
                 </div>
@@ -30,38 +30,36 @@
         </div>
         <nav :class="[
             `fixed inset-0 z-20 flex flex-col items-center justify-center bg-slate-950 md:relative md:bg-transparent md:flex
-            md-justify-between md:flex-row transition-all duration-200 transform`,
+            md:justify-between md:flex-row transition-all duration-200 transform`,
             isMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto delay-300'
-                     : 'opacity-0 -translate-y-4 pointer-events-none md:opacity-100 md:translate-y-0 md:pointer-evvents-auto'
+                     : 'opacity-0 -translate-y-4 pointer-events-none md:opacity-100 md:translate-y-0 md:pointer-events-auto'
         ]">
             <ul class="flex flex-col items-center space-y-5 md:flex-row
             md:space-x-5 md:space-y-0">
                 <li v-for="item in Menu" :key="item.name" class="group relative">
                     <a :href="item.href"
-                    class="relative inline-block text-blue-100 group-hover:text-blue-300
-                    transition-all duration-300 text-xl md:text-white md:text-base font-medium
-                    group"
+                    class="relative inline-block text-blue-100 group-hover:text-blue-500
+                    transition-all duration-300 text-xl md:text-white md:text-base font-medium"
                     @click="scrollToSection(item.href)">
                     {{ item.name }}
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500
                     transition-all duration-500 group-hover:w-full">
-                    
                     </span>
                     </a>
                 </li>
             </ul>
-            <div class="mt-6 md:mt-0 md:ml-7 ">
-                <CustomButton label="Let's Talk" variant="nav" @click="handleLetsTalk" />
+            <div class="mt-6 md:mt-0 md:ml-7 group">
+                <button class="px-8 py-4 rounded-2xl border-2 border-blue-500 text-blue-500 font-semibold
+            hover:bg-blue-400/10 transition-all duration-300 flex items-center text-nowrap">
+                    Let's Talk
+                </button>
             </div>
-
         </nav>
     </header>
 </template>
 
 <script setup>
-
-import { ref } from 'vue';
-import CustomButton from './CustomButton.vue';
+import { ref } from 'vue'; // Fixed: removed the extra '1'
 
 const Menu = ref([
     { name: 'Services', href: '#services' },
@@ -71,12 +69,14 @@ const Menu = ref([
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'Contacts', href: '#contacts' },
 ]);
+
 const isMenuOpen = ref(false);
-const scrollToSection = (href) => { // fat arrow function
-    isMenuOpen.value = false; //automatically close Menu
+
+const scrollToSection = (href) => {
+    isMenuOpen.value = false; // Close menu when clicking
+    const section = document.querySelector(href); // Get the element by href
     if (section) {
-        section.scrollInview({ behavior: 'smooth' });
+        section.scrollIntoView({ behavior: 'smooth' }); // Fixed: scrollIntoView, not scrollInview
     }
 }
-
 </script>

@@ -4,7 +4,7 @@
             <div class="text-center m-16" data-aos="fade-up">
                 <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
                     My <span
-                        class="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-red-200 to-cyan-600">Services</span>
+                        class="text-transparent bg-clip-text bg-linear-to-r bg-blue-500">Services</span>
                 </h2>
                 <p class="text-white text-lg max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
                     This is a list of services that I offer, Please note that this list is not limited and is subject to
@@ -23,7 +23,7 @@
                         <div class="inline-flex items-center justify-center
               w-16 h-16 rounded-xl bg-linear-to-r from-blue-500/20 to-cyan-500/20 border border-blue-400/30
               group-hover:scale-110 transition-transform duration-300">
-                            <component :is="service.icon" class="w-8 h-8 text-blue-400">
+                            <component :is="service.icon" class="w-8 h-8 text-blue-600">
                             </component>
                         </div>
                     </div>
@@ -43,9 +43,9 @@
                 </div>
             </div>
 
-            <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="800">
+            <div class="text-center mt-10" data-aos="fade-up" data-aos-delay="400">
                 <div class="inline-flex flex-col sm:flex-row gap-4 items-center">
-                    <button class="px-8 py-4 rounded-xl border-2 border-blue-400 text-blue-400 font-semibold
+                    <button class="px-8 py-4 rounded-xl border-2 border-blue-500 text-blue-500 font-semibold
             hover:bg-blue-400/10 transition-all duration-300 flex items-center">
                         Get In Touch
                         <ChatBubbleLeftRightIcon class="w-5 h-5 ml-2" />
