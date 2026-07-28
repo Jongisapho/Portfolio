@@ -1,6 +1,7 @@
 <template>
     <header class="flex justify-between p-6 bg-opacity-50 bg-slate-950 relative z-20">
-        <div class="text-3xl transition-all duration-500 hover:text-blue-500 font-bold bg-white bg-clip-text text-transparent">
+        <div
+            class="text-3xl transition-all duration-500 hover:text-blue-500 font-bold bg-white bg-clip-text text-transparent">
             My<span class="font-black"> Portfolio </span>
         </div>
         <div class="md:hidden z-30">
@@ -32,19 +33,18 @@
             `fixed inset-0 z-20 flex flex-col items-center justify-center bg-slate-950 md:relative md:bg-transparent md:flex
             md:justify-between md:flex-row transition-all duration-200 transform`,
             isMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto delay-300'
-                     : 'opacity-0 -translate-y-4 pointer-events-none md:opacity-100 md:translate-y-0 md:pointer-events-auto'
+                : 'opacity-0 -translate-y-4 pointer-events-none md:opacity-100 md:translate-y-0 md:pointer-events-auto'
         ]">
             <ul class="flex flex-col items-center space-y-5 md:flex-row
             md:space-x-5 md:space-y-0">
                 <li v-for="item in Menu" :key="item.name" class="group relative">
-                    <a :href="item.href"
-                    class="relative inline-block text-blue-100 group-hover:text-blue-500
+                    <a :href="item.href" class="relative inline-block text-blue-100 group-hover:text-blue-500
                     transition-all duration-300 text-xl md:text-white md:text-base font-medium"
-                    @click="scrollToSection(item.href)">
-                    {{ item.name }}
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500
+                        @click="scrollToSection(item.href)">
+                        {{ item.name }}
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500
                     transition-all duration-500 group-hover:w-full">
-                    </span>
+                        </span>
                     </a>
                 </li>
             </ul>

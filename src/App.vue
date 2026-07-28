@@ -4,6 +4,7 @@
     <Hero />
     <Services />
     <About />
+    <Experience />
   </div>
 </template>
 <script>
@@ -14,17 +15,19 @@ import Hero from './components/Hero.vue';
 import Navbar from './components/Navbar.vue';
 import Services from './components/Services.vue';
 import About from './components/About.vue';
+import Experience from './components/Experience.vue';
 
 
 import { ref, nextTick, onMounted, onUnmounted } from 'vue';
 
 
 export default {
-  components : {
+  components: {
     Navbar,
     Hero,
     Services,
-    About
+    About,
+    Experience
   },
   setup() {
     const windowWidth = ref(typeof window !== 'undefined' ? window.innerWidth : 1024)
@@ -42,8 +45,8 @@ export default {
 
       AOS.init({
         duration: 800,
-        once:false,
-        offset:100,
+        once: false,
+        offset: 100,
         easing: 'ease-in-out'
       });
 
@@ -51,10 +54,8 @@ export default {
         loading.value = false;
       }, 800);
     });
-    return {loading, windowWidth};
+    return { loading, windowWidth };
   }
 }
 </script>
-<style>
-
-</style>
+<style></style>

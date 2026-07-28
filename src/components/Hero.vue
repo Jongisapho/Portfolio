@@ -25,12 +25,13 @@
                         data-aos="fade-up" data-aos-delay="300">
                         <button class="px-8 py-4 rounded-2xl border-2 border-blue-500 text-blue-500 font-semibold
             hover:bg-blue-400/10 transition-all duration-300 flex items-center text-nowrap">
-                            Lets Talk <ArrowRightIcon class="w-6 h-6 ml-2"/>
+                            Lets Talk
+                            <ArrowRightIcon class="w-6 h-6 ml-2" />
                         </button>
-                        <button
-                        class="px-4 py-4 rounded-2xl border-2 border-blue-500 text-blue-500 font-semibold
+                        <button class="px-4 py-4 rounded-2xl border-2 border-blue-500 text-blue-500 font-semibold
             hover:bg-blue-400/10 transition-all duration-300 flex items-center">
-                            Download CV <ArrowDownTrayIcon class="w-6 h-6 ml-2" />
+                            Download CV
+                            <ArrowDownTrayIcon class="w-6 h-6 ml-2" />
                         </button>
                     </div>
                 </div>

@@ -3,8 +3,7 @@
         <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-1">
             <div class="text-center m-16" data-aos="fade-up">
                 <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
-                    My <span
-                        class="text-transparent bg-clip-text bg-linear-to-r bg-blue-500">Services</span>
+                    My <span class="text-transparent bg-clip-text bg-linear-to-r bg-blue-500">Services</span>
                 </h2>
                 <p class="text-white text-lg max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
                     This is a list of services that I offer, Please note that this list is not limited and is subject to
@@ -106,7 +105,7 @@ const services = ref([
         name: 'Email Automation',
         desc: 'Implementing email automation systems for better customer engagement.'
     },
-    
+
 ]);
 </script>
 
