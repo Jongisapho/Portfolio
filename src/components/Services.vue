@@ -44,7 +44,7 @@
 
             <div class="text-center mt-10" data-aos="fade-up" data-aos-delay="400">
                 <div class="inline-flex flex-col sm:flex-row gap-4 items-center">
-                    <button class="px-8 py-4 rounded-xl border-2 border-blue-500 text-blue-500 font-semibold
+                        <button class="px-5 py-2.5 rounded-lg border-2 border-blue-500 text-blue-500 text-sm font-semibold
             hover:bg-blue-400/10 transition-all duration-300 flex items-center">
                         Get In Touch
                         <ChatBubbleLeftRightIcon class="w-5 h-5 ml-2" />

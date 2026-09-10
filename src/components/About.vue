@@ -1,48 +1,16 @@
 <<template>
     <section class="bg-slate-950 relative py-20 overflow-hidden min-h-screen flex items-center" id="about">
         <div class="w-full px-5 sm:px-8 md:px-12 lg:px-5 max-w-5xl lg:max-w-7xl mx-auto relative z-10">
-            <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
+            <div class="flex items-center justify-center">
                 <div class="lg:h-full flex justify-center lg:justify-start order-2 lg:order-1">
                     <div class="relative w-full max-w-md">
-                        <div class="relative md:-right-10  bg-slate-950 ">
-                            <div class="grid grid-cols-2 gap-2">
-                                <div v-for="(image, index) in aboutImage" :key="image.id" class="relative group"
-                                    :data-aos="image.animation" :data-aos-delay="image.delay">
-                                    <div class="rounded-3xl  shadow-lg " :class="image.gradient">
-                                        <img :src="image.src" :alt="image.alt"
-                                            class="w-full h-48 object-cover bg-blue-400 rounded-xl group-hover:scale-105 transition-trransform duration-300">
-
-
-                                    </div>
-                                    <div class="absolute -top-2 -right-2 text-white text-xs px-2 py-1 rounded-full font-semibold"
-                                        :class="image.badgeColor">
-                                        {{ image.badge }}
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="absolute -bottom-4 left-1/2 transform translate-x-1/2 z-20 bg-slate-950 rounded-2xl px-6 py-3 border-2 border-blue-500 shadow-xl"
-                                data-aos="fade-up" data-aos-delay="600">
-                                <div class="text-center text-blue-500 text-xl font-bold"> 3+ Years Experience</div>
-                            </div>
-                        </div>
                         <div class="flex group items-center gap-2 flex-col sm:flex-row sm:w-max sm:mx-auto mt-10 md:items-center md:ml-20 lg:ml-12"
                             data-aos="fade-up" data-aos-delay="300">
-                            <button class="px-8 py-4 rounded-2xl border-2 border-blue-500 text-blue-500 font-semibold
-            hover:bg-blue-400/10 transition-all duration-300 flex items-center text-nowrap">
-                                View Portfolio
-                                <ArrowRightIcon class="w-6 h-6 ml-2" />
-                            </button>
-                            <button class="px-10 py-4 rounded-2xl border-2 border-blue-500 text-blue-500 font-semibold
-            hover:bg-blue-400/10 transition-all duration-300 flex items-center text-nowrap">
-                                Contact Me
-                                <ChatBubbleLeftRightIcon class="w-6 h-6 ml-2" />
-
-                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="text-center lg:text-left" data-aos="fade-left">
+                <div class="w-full max-w-4xl text-center" data-aos="fade-left">
                     <h2 class="text-white font-bold text-4xl md:text-5xl lg:text-6xl leading-tight">
                         About <span class="text-transparent bg-clip-text bg-linear-to-r bg-blue-500">
                             Me</span>
@@ -50,13 +18,11 @@
                     <p class="text-white font-extrabold pt-4">
                         Software Developer & ML Engineering student
                     </p>
-                    <p class="text-white pt-2 text-center lg:text-left text-lg leading-relaxed" data-aos="fade-left"
+                    <p class="text-white pt-2 text-center text-lg leading-relaxed" data-aos="fade-left"
                         data-aos-delay="200">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat.
+                        I build thoughtful, reliable software that turns complex problems into clear digital
+                        experiences. My work spans responsive interfaces, backend systems, and machine learning
+                        applications, with a strong focus on maintainability and real-world impact.
                     </p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 pb-4 " data-aos="fade-up"
                         data-aos-delay="300">
@@ -176,7 +142,7 @@
             id: 1,
             text: 'View Portfolio',
             icon: ArrowRightIcon,
-            iconclass: `ml-2 group-hover: translate-x-1 tranisition-transform`,
+            iconclass: `ml-2 group-hover:translate-x-1 transition-transform`,
             classes: `bg-linear-to-r from-blue-600 to-cyan-600 text-white hover:from-blue-500 hover:to-cyan-500`
         },
         {

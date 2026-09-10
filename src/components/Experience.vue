@@ -38,6 +38,27 @@
                     </div>
 
                 </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-white mb-8">Professional journey</h3>
+                    <div class="space-y-6">
+                        <article v-for="experience in experiences" :key="experience.id"
+                            class="border-l-2 pl-5" :class="experience.borderColor">
+                            <p class="text-sm font-semibold" :class="experience.dateColor">{{ experience.period }}</p>
+                            <h4 class="text-xl font-bold text-white mt-1">{{ experience.position }}</h4>
+                            <p class="font-semibold mt-1" :class="experience.companyColor">{{ experience.company }}</p>
+                            <p class="text-slate-200 mt-3">{{ experience.desc }}</p>
+                        </article>
+                    </div>
+                    <div class="mt-10">
+                        <h3 class="text-2xl font-bold text-white mb-5">Tech stack</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span v-for="technology in techStack" :key="technology"
+                                class="rounded-full border border-blue-400 px-3 py-1 text-sm text-blue-100">
+                                {{ technology }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -52,7 +73,7 @@
             title: "Frontend Development",
             icon: CodeBracketIcon,
             iconColor: 'text-cyan-400',
-            percentage: 90,
+            percentage: 70,
             percentageColor: "text-blue-400 text-sm",
             gradient: 'bg-linear-to-r from-blue-500 to-cyan-500'
         },
@@ -61,7 +82,7 @@
             title: "Backend Development",
             icon: ServerIcon,
             iconColor: 'text-blue-400',
-            percentage: 90,
+            percentage: 60,
             percentageColor: "text-cyan-400 text-sm",
             gradient: 'bg-linear-to-r from-cyan-500 to-blue-500'
         },
@@ -70,7 +91,7 @@
             title: "UI/UX Design",
             icon: PaintBrushIcon,
             iconColor: 'text-cyan-400',
-            percentage: 90,
+            percentage: 65,
             percentageColor: "text-blue-400 text-sm",
             gradient: 'bg-linear-to-r from-blue-500 to-cyan-500'
         },
@@ -79,7 +100,7 @@
             title: "Mobile Development",
             icon: DevicePhoneMobileIcon,
             iconColor: 'text-blue-400',
-            percentage: 90,
+            percentage: 40,
             percentageColor: "text-cyan-400 text-sm",
             gradient: 'bg-linear-to-r from-cyan-500 to-blue-500'
         },
@@ -88,7 +109,7 @@
             title: "AI & ML Engineering",
             icon: SparklesIcon,
             iconColor: 'text-cyan-400',
-            percentage: 20,
+            percentage: 60,
             percentageColor: "text-blue-500 text-sm",
             gradient: 'bg-linear-to-r from-blue-500 to-cyan-500'
         }
@@ -97,14 +118,14 @@
     const experiences = [
         {
             id: 1,
-            position: "Intern Data Scientist",
+            position: "Intern Data Scientist (Vac Work)",
             company: "Telkom.",
-            period: "2023 Januanry",
-            desc: "Lorem ipsum dolot sit amet consectetur adispicing elit.Q",
+            period: "January 2023 (1 Month)",
+            desc: "Supported data analysis and machine learning initiatives while developing practical experience with business-focused technology solutions.",
             borderColor: "border-blue-500/50",
             dotColor: "bg-blue-500",
             borderClass: "border-blue-500/20",
-            dateColor: "text-blue-400 text-sm fonr-semibold",
+            dateColor: "text-blue-400 text-sm font-semibold",
             companyColor: "text-cyan-400"
         }
     ]

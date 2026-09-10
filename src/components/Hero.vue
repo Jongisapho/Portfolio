@@ -15,24 +15,24 @@
                         </p>
                     </div>
                     <p class="text-gray-200 text-center mx-auto max-w-xl text-lg leading-relaxed mt-10 mr-10 lg:mx-0">
-                        I am a Computer Science graduate, A Computer Science Honours student with an obession for
-                        Software Engineering, Machine Learning and Natural Language Processing.
+                        I am a Computer Science graduate and Honours student focused on Software Engineering, Machine
+                        Learning and Natural Language Processing.
                         I enjoy building blazing-fast, scalable full-stack applications.
                         I love writing clean, efficient code that solves real problems and I do it with focus, speed and
                         enthusiasm.
                     </p>
                     <div class="flex group items-center  gap-4 flex-col sm:flex-row sm:w-max sm:mx-auto mt-10"
                         data-aos="fade-up" data-aos-delay="300">
-                        <button class="px-8 py-4 rounded-2xl border-2 border-blue-500 text-blue-500 font-semibold
+                        <a href="#about" class="px-5 py-2.5 rounded-lg border-2 border-blue-500 text-blue-500 text-sm font-semibold
             hover:bg-blue-400/10 transition-all duration-300 flex items-center text-nowrap">
                             Lets Talk
-                            <ArrowRightIcon class="w-6 h-6 ml-2" />
-                        </button>
-                        <button class="px-4 py-4 rounded-2xl border-2 border-blue-500 text-blue-500 font-semibold
+                            <ArrowRightIcon class="w-5 h-5 ml-2" />
+                        </a>
+                        <a href="#skills" class="px-5 py-2.5 rounded-lg border-2 border-blue-500 text-blue-500 text-sm font-semibold
             hover:bg-blue-400/10 transition-all duration-300 flex items-center">
-                            Download CV
-                            <ArrowDownTrayIcon class="w-6 h-6 ml-2" />
-                        </button>
+                            View Skills
+                            <ArrowDownTrayIcon class="w-5 h-5 ml-2" />
+                        </a>
                     </div>
                 </div>
                 <div class="flex items-center justify-center lg:justify-start gap-8 md:ml-30 pt-4" data-aos="fade-up"
@@ -63,14 +63,6 @@
 <script setup>
 
 import { ArrowRightIcon, ArrowDownTrayIcon } from '@heroicons/vue/16/solid';
-
-const handleContact = () => {
-    console.log("Contact clicked");
-}
-
-const handleDownloadCV = () => {
-    console.log("Download CV clicked");
-}
 
 </script>
 
