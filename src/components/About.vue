@@ -16,13 +16,13 @@
                             Me</span>
                     </h2>
                     <p class="text-white font-extrabold pt-4">
-                        Software Developer & ML Engineering student
+                        BSc Honours Computer Science Student
                     </p>
                     <p class="text-white pt-2 text-center text-lg leading-relaxed" data-aos="fade-left"
                         data-aos-delay="200">
-                        I build thoughtful, reliable software that turns complex problems into clear digital
-                        experiences. My work spans responsive interfaces, backend systems, and machine learning
-                        applications, with a strong focus on maintainability and real-world impact.
+                        I build thoughtful, reliable software across full-stack development, natural language
+                        processing and data analytics. My work focuses on maintainable systems that solve real-world
+                        problems and create clear digital experiences.
                     </p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 pb-4 " data-aos="fade-up"
                         data-aos-delay="300">
@@ -112,28 +112,28 @@
             icon: CodeBracketSquareIcon,
             iconColor: "text-red-400",
             title: 'Frontend',
-            desc: "Vue js, React, JavaScript, TypeScript, TailwindCSS"
+                            desc: "React, Vue.js, JavaScript, HTML, CSS, Tailwind CSS, Vite"
         },
         {
             id: 2,
             icon: ServerIcon,
             iconColor: "text-green-400",
             title: 'Backend',
-            desc: "Node js, Express, MongoDB, SQL, REST APIs, Postgres, SQLite"
+                            desc: "Node.js, Express.js, SQLite, PostgreSQL, MySQL, MongoDB"
         },
         {
             id: 3,
             icon: PaintBrushIcon,
             iconColor: "text-blue-400",
             title: 'Design',
-            desc: "UI/UX Design, Figma, Responsive Design, Prototyping"
+                            desc: "Figma, Canva, responsive design and prototyping"
         },
         {
             id: 4,
             icon: CubeIcon,
             iconColor: "text-cyan-400",
             title: 'Tools',
-            desc: "Git, Docker, VSCode, NPM, JWT, Git, Github, Postman, Docker, Jest"
+                            desc: "Git, GitHub, Docker, Postman, Power BI and Jest"
         },
     ]
 

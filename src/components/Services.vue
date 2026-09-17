@@ -73,37 +73,37 @@ const services = ref([
         id: 1,
         icon: CodeBracketIcon,
         name: 'Software Development',
-        desc: 'Developing robust software solutions tailored to your daily business needs.'
+        desc: 'Building robust software solutions tailored to real business and user needs.'
     },
     {
         id: 2,
         icon: DevicePhoneMobileIcon,
         name: 'Web Development',
-        desc: 'Developing modern, responsive and secure web applications using cutting-edge technologies.'
+        desc: 'Developing modern, responsive full-stack web applications with React, Vue.js and Node.js.'
     },
     {
         id: 3,
         icon: ComputerDesktopIcon,
         name: 'AI & Machine Learning',
-        desc: 'Implementing intelligent algorithms and automated systems to solve complex business challenges.'
+        desc: 'Developing intelligent systems with machine learning and responsible LLM-powered features.'
     },
     {
         id: 4,
         icon: PaintBrushIcon,
-        name: 'UI/UX Design',
-        desc: 'Designing intuitive and beautiful user interfaces with focus on user experience.'
+        name: 'Natural Language Processing',
+        desc: 'Working with NLP and sentiment analysis to turn text into useful, evidence-based insights.'
     },
     {
         id: 5,
         icon: DocumentTextIcon,
-        name: 'IT Consulting',
-        desc: 'Providing expert IT consulting to help you make informed technology decisions.'
+        name: 'Data Analytics',
+        desc: 'Cleaning, analysing and visualising data with dashboards and reports that support better decisions.'
     },
     {
         id: 6,
         icon: EnvelopeIcon,
-        name: 'Email Automation',
-        desc: 'Implementing email automation systems for better customer engagement.'
+        name: 'UI/UX Design',
+        desc: 'Designing clear, responsive interfaces with a focus on usability and maintainable implementation.'
     },
 
 ]);

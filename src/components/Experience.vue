@@ -118,10 +118,10 @@
     const experiences = [
         {
             id: 1,
-            position: "Intern Data Scientist (Vac Work)",
-            company: "Telkom.",
-            period: "January 2023 (1 Month)",
-            desc: "Supported data analysis and machine learning initiatives while developing practical experience with business-focused technology solutions.",
+            position: "Data Science (Vocational Work)",
+            company: "Telkom SOC, Pretoria",
+            period: "January 2024 - February 2024",
+            desc: "Cleaned, analysed and visualised large datasets, built dashboards and automated reports with Power BI and Excel, and identified trends to support data-driven decisions.",
             borderColor: "border-blue-500/50",
             dotColor: "bg-blue-500",
             borderClass: "border-blue-500/20",
@@ -131,9 +131,9 @@
     ]
 
     const techStack = [
-        'Vue Js', 'React', 'JavaScript', 'TypeScript', 'Java', 'C++', 'Node js', 'Express', 'TailwindCSS',
-        'MongoDB', 'Postgres', 'SQL', 'Docker', 'VScode', 'Python', 'REST APIs', 'Git',
-        'Github', 'Postman', 'Jest', 'Figma'
+        'Java', 'Python', 'C++', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS', 'React', 'Vue.js', 'Node.js',
+        'Express.js', 'Vite', 'PyTorch', 'Scikit-learn', 'Jest', 'SQLite', 'PostgreSQL', 'MySQL', 'MongoDB',
+        'Git', 'GitHub', 'Docker', 'Postman', 'Figma', 'Canva', 'Power BI'
     ]
 
 </script>

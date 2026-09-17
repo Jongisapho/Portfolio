@@ -1,25 +1,23 @@
 <template>
     <section class="relative w-full overflow-hidden min-h-screen flex items-center bg-slate-950">
-        <div class="text-white w-full max-w-5xl lg:max-w-7xl mx-auto relative z-10">
+        <div class="text-white w-full max-w-5xl lg:max-w-7xl mx-auto relative z-10 px-5 sm:px-8 lg:px-5">
             <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
-                <div class="flex flex-col justify-center lg:-mt-40 mt-5 p-5">
-                    <div class="text-white lg:text-center" data-aos="fade-right">
-                        <h1 class="font-bold md:text-4xl text-5xl">
+                <div class="flex min-w-0 flex-col justify-center lg:-mt-40 mt-5">
+                    <div class="text-white text-center" data-aos="fade-right">
+                        <h1 class="font-bold text-4xl sm:text-5xl md:text-4xl">
                             Hello, I'm
                             <span class="text-transparent bg-clip-text bg-linear-to-r bg-blue-500 ">Jongisapho
                                 Ndeya</span>
 
                         </h1>
-                        <p class="font-medium text-xl md:text-xl mt-5" data-aos="fade-right" data-aos-delay="500">
-                            Computer Scientist | Software Developer | AI & ML Engineering
+                        <p class="font-medium text-lg sm:text-xl mt-5" data-aos="fade-right" data-aos-delay="500">
+                            Software Developer | NLP Researcher | Data Analyst
                         </p>
                     </div>
-                    <p class="text-gray-200 text-center mx-auto max-w-xl text-lg leading-relaxed mt-10 mr-10 lg:mx-0">
-                        I am a Computer Science graduate and Honours student focused on Software Engineering, Machine
-                        Learning and Natural Language Processing.
-                        I enjoy building blazing-fast, scalable full-stack applications.
-                        I love writing clean, efficient code that solves real problems and I do it with focus, speed and
-                        enthusiasm.
+                    <p class="text-gray-200 text-center mx-auto max-w-xl text-base sm:text-lg leading-relaxed mt-8 sm:mt-10">
+                        I am a BSc Honours Computer Science student focused on software development, natural language
+                        processing and data analytics. I build scalable full-stack applications and enjoy solving real
+                        problems with focus, speed and enthusiasm.
                     </p>
                     <div class="flex group items-center  gap-4 flex-col sm:flex-row sm:w-max sm:mx-auto mt-10"
                         data-aos="fade-up" data-aos-delay="300">
