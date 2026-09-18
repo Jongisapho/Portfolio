@@ -42,7 +42,7 @@
                     </li>
                 </ul>
                 <div class="mt-6 md:mt-0 md:ml-7 group">
-                    <a href="#about" @click="scrollToSection('#about')" class="px-5 py-2.5 rounded-lg border-2 border-blue-500 text-blue-500 text-sm font-semibold hover:bg-blue-400/10 transition-all duration-300 flex items-center text-nowrap">
+                    <a href="#contact" @click.prevent="openContactModal" class="px-5 py-2.5 rounded-lg border-2 border-blue-500 text-blue-500 text-sm font-semibold hover:bg-blue-400/10 transition-all duration-300 flex items-center text-nowrap">
                         Let's Talk
                     </a>
                 </div>
@@ -81,4 +81,9 @@ const scrollToSection = (href) => {
         section.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+const openContactModal = () => {
+    isMenuOpen.value = false;
+    window.dispatchEvent(new Event('open-contact-modal'));
+};
 </script>

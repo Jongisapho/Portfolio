@@ -82,6 +82,10 @@
                                 <span class="block text-xs uppercase tracking-wider text-gray-400">LinkedIn</span>
                                 <span class="mt-1 block break-all font-medium">linkedin.com/in/jongisapho-ndeya</span>
                             </a>
+                            <a href="https://github.com/Jongisapho" target="_blank" rel="noreferrer" class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 transition hover:border-blue-400/60 hover:bg-blue-500/10">
+                                <span class="block text-xs uppercase tracking-wider text-gray-400">GitHub</span>
+                                <span class="mt-1 block break-all font-medium">github.com/Jongisapho</span>
+                            </a>
                             <a href="https://jongisapho.versel.app" target="_blank" rel="noreferrer" class="rounded-xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 transition hover:border-cyan-300 hover:bg-cyan-400/20">
                                 <span class="block text-xs uppercase tracking-wider text-cyan-200">Website</span>
                                 <span class="mt-1 block break-all font-medium">Jongisapho.vercel.app</span>
