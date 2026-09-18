@@ -6,8 +6,8 @@
                     My <span class="text-transparent bg-clip-text bg-linear-to-r bg-blue-500">Services</span>
                 </h2>
                 <p class="text-white text-lg max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-                    This is a list of services that I offer, Please note that this list is not limited and is subject to
-                    change with time .
+                    I enjoy working at the point where thoughtful software, intelligent systems and real-world
+                    problems meet. Here are some of the ways I can contribute.
                 </p>
             </div>
 
@@ -73,37 +73,37 @@ const services = ref([
         id: 1,
         icon: CodeBracketIcon,
         name: 'Software Development',
-        desc: 'Building robust software solutions tailored to real business and user needs.'
+        desc: 'Turning ideas into reliable, maintainable software that is shaped around real people and real needs.'
     },
     {
         id: 2,
         icon: DevicePhoneMobileIcon,
         name: 'Web Development',
-        desc: 'Developing modern, responsive full-stack web applications with React, Vue.js and Node.js.'
+        desc: 'Creating responsive full-stack experiences with React, Vue.js and Node.js, from the first screen to the working system behind it.'
     },
     {
         id: 3,
         icon: ComputerDesktopIcon,
         name: 'AI & Machine Learning',
-        desc: 'Developing intelligent systems with machine learning and responsible LLM-powered features.'
+        desc: 'Exploring machine learning and responsible AI features that make software more useful, adaptive and human-centred.'
     },
     {
         id: 4,
         icon: PaintBrushIcon,
         name: 'Natural Language Processing',
-        desc: 'Working with NLP and sentiment analysis to turn text into useful, evidence-based insights.'
+        desc: 'Studying how computers understand language and turning text into insights through NLP and sentiment analysis.'
     },
     {
         id: 5,
         icon: DocumentTextIcon,
         name: 'Data Analytics',
-        desc: 'Cleaning, analysing and visualising data with dashboards and reports that support better decisions.'
+        desc: 'Finding the story in data through careful cleaning, analysis and visualisation that supports better decisions.'
     },
     {
         id: 6,
         icon: EnvelopeIcon,
         name: 'UI/UX Design',
-        desc: 'Designing clear, responsive interfaces with a focus on usability and maintainable implementation.'
+        desc: 'Designing clear digital experiences where usability, visual detail and maintainable implementation work together.'
     },
 
 ]);

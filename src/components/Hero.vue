@@ -11,13 +11,13 @@
 
                         </h1>
                         <p class="font-medium text-lg sm:text-xl mt-5" data-aos="fade-right" data-aos-delay="500">
-                            Software Developer | NLP Researcher | Data Analyst
+                            Software Developer | Machine Learning & AI Enthusiast | Computer Science Researcher
                         </p>
                     </div>
                     <p class="text-gray-200 text-center mx-auto max-w-xl text-base sm:text-lg leading-relaxed mt-8 sm:mt-10">
-                        I am a BSc Honours Computer Science student focused on software development, natural language
-                        processing and data analytics. I build scalable full-stack applications and enjoy solving real
-                        problems with focus, speed and enthusiasm.
+                        I am a BSc Honours Computer Science student at the University of Pretoria, curious about how
+                        intelligent systems understand, interpret and assist people. I build software, explore AI and
+                        keep asking better questions about what technology can do in the real world.
                     </p>
                     <div class="flex group items-center  gap-4 flex-col sm:flex-row sm:w-max sm:mx-auto mt-10"
                         data-aos="fade-up" data-aos-delay="300">

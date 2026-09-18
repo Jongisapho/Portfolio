@@ -9,13 +9,13 @@
                     </span>
                 </h2>
                 <p class="text-white text-lg max-w-2xl mx-auto">
-                    My technical expertise and professional journey
+                    The tools I use to turn questions into working software and useful insights.
                 </p>
             </div>
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
                 <div data-aos="fade-right">
                     <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-                        Technical skills
+                        Tools for building and exploring
                     </h3>
                     <div class="space-y-6">
                         <div v-for="skill in skills" :key="skill.id" class="group">
@@ -39,7 +39,7 @@
 
                 </div>
                 <div data-aos="fade-left">
-                    <h3 class="text-2xl font-bold text-white mb-8">Professional journey</h3>
+                    <h3 class="text-2xl font-bold text-white mb-8">Where I have been learning by doing</h3>
                     <div class="space-y-6">
                         <article v-for="experience in experiences" :key="experience.id"
                             class="border-l-2 pl-5" :class="experience.borderColor">

@@ -16,13 +16,26 @@
                             Me</span>
                     </h2>
                     <p class="text-white font-extrabold pt-4">
-                        BSc Honours Computer Science Student
+                        Software Developer | Machine Learning & AI Enthusiast | Computer Science Researcher
                     </p>
                     <p class="text-white pt-2 text-center text-lg leading-relaxed" data-aos="fade-left"
                         data-aos-delay="200">
-                        I build thoughtful, reliable software across full-stack development, natural language
-                        processing and data analytics. My work focuses on maintainable systems that solve real-world
-                        problems and create clear digital experiences.
+                        My journey in technology started long before university. What began as a fascination with
+                        computers has grown into a drive to build software and understand how intelligent systems can
+                        help people.
+                    </p>
+                    <p class="text-white pt-4 text-center text-lg leading-relaxed" data-aos="fade-left"
+                        data-aos-delay="300">
+                        I am currently exploring traditional machine learning and transformer-based models, with a
+                        particular interest in natural language processing, AI systems and the connection between
+                        intelligent models and software engineering. I have also built practical projects such as
+                        FutureFeed, an AI-powered social platform developed during my Software Engineering work.
+                    </p>
+                    <p class="text-white pt-4 text-center text-lg leading-relaxed" data-aos="fade-left"
+                        data-aos-delay="400">
+                        I am always learning, building and asking questions. AI is not something that suddenly
+                        appeared; we are simply getting better at putting it to work. I am open to collaborations,
+                        interesting projects and conversations around technology, AI and software development.
                     </p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 pb-4 " data-aos="fade-up"
                         data-aos-delay="300">
