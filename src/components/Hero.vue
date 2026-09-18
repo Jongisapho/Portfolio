@@ -67,8 +67,8 @@
 
                     <div v-if="activeModal === 'contact'">
                         <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">Open channel</p>
-                        <h2 id="contact-modal-title" class="mt-3 text-3xl font-bold">Let's build something useful.</h2>
-                        <p class="mt-3 text-gray-300">Reach out through whichever channel suits you best.</p>
+                        <h2 id="contact-modal-title" class="mt-3 text-3xl font-bold">Let's Talk.</h2>
+                        <p class="mt-3 text-gray-300">Reach out through which ever channel suits you best.</p>
                         <div class="mt-7 grid gap-3">
                             <a href="tel:+27707587825" class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 transition hover:border-blue-400/60 hover:bg-blue-500/10">
                                 <span class="block text-xs uppercase tracking-wider text-gray-400">Phone</span>
@@ -84,7 +84,7 @@
                             </a>
                             <a href="https://jongisapho.versel.app" target="_blank" rel="noreferrer" class="rounded-xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 transition hover:border-cyan-300 hover:bg-cyan-400/20">
                                 <span class="block text-xs uppercase tracking-wider text-cyan-200">Website</span>
-                                <span class="mt-1 block break-all font-medium">Jongisapho.versel.app</span>
+                                <span class="mt-1 block break-all font-medium">Jongisapho.vercel.app</span>
                             </a>
                         </div>
                     </div>
