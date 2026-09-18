@@ -21,16 +21,16 @@
                     </p>
                     <div class="flex group items-center  gap-4 flex-col sm:flex-row sm:w-max sm:mx-auto mt-10"
                         data-aos="fade-up" data-aos-delay="300">
-                        <a href="#about" class="px-5 py-2.5 rounded-lg border-2 border-blue-500 text-blue-500 text-sm font-semibold
+                        <button type="button" @click="openModal('contact')" class="px-5 py-2.5 rounded-lg border-2 border-blue-500 text-blue-500 text-sm font-semibold
             hover:bg-blue-400/10 transition-all duration-300 flex items-center text-nowrap">
                             Lets Talk
                             <ArrowRightIcon class="w-5 h-5 ml-2" />
-                        </a>
-                        <a href="#skills" class="px-5 py-2.5 rounded-lg border-2 border-blue-500 text-blue-500 text-sm font-semibold
+                        </button>
+                        <button type="button" @click="openModal('skills')" class="px-5 py-2.5 rounded-lg border-2 border-blue-500 text-blue-500 text-sm font-semibold
             hover:bg-blue-400/10 transition-all duration-300 flex items-center">
                             View Skills
                             <ArrowDownTrayIcon class="w-5 h-5 ml-2" />
-                        </a>
+                        </button>
                     </div>
                 </div>
                 <div class="flex items-center justify-center lg:justify-start gap-8 md:ml-30 pt-4" data-aos="fade-up"
@@ -55,13 +55,94 @@
             </div>
         </div>
 
+        <Transition name="modal">
+            <div v-if="activeModal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 px-5 backdrop-blur-sm"
+                @click.self="closeModal" role="presentation">
+                <section class="relative w-full max-w-lg overflow-hidden rounded-2xl border border-blue-400/30 bg-slate-900 p-6 text-white shadow-2xl shadow-blue-950/50 sm:p-8"
+                    role="dialog" aria-modal="true" :aria-labelledby="`${activeModal}-modal-title`">
+                    <button type="button" @click="closeModal" aria-label="Close dialog"
+                        class="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-xl text-gray-300 transition hover:border-blue-400 hover:text-white">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <div v-if="activeModal === 'contact'">
+                        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">Open channel</p>
+                        <h2 id="contact-modal-title" class="mt-3 text-3xl font-bold">Let's build something useful.</h2>
+                        <p class="mt-3 text-gray-300">Reach out through whichever channel suits you best.</p>
+                        <div class="mt-7 grid gap-3">
+                            <a href="tel:+27707587825" class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 transition hover:border-blue-400/60 hover:bg-blue-500/10">
+                                <span class="block text-xs uppercase tracking-wider text-gray-400">Phone</span>
+                                <span class="mt-1 block font-medium">+27 70 758 7825</span>
+                            </a>
+                            <a href="mailto:Jongisaphondeya1@gmail.com" class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 transition hover:border-blue-400/60 hover:bg-blue-500/10">
+                                <span class="block text-xs uppercase tracking-wider text-gray-400">Email</span>
+                                <span class="mt-1 block break-all font-medium">Jongisaphondeya1@gmail.com</span>
+                            </a>
+                            <a href="https://linkedin.com/in/jongisapho-ndeya" target="_blank" rel="noreferrer" class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 transition hover:border-blue-400/60 hover:bg-blue-500/10">
+                                <span class="block text-xs uppercase tracking-wider text-gray-400">LinkedIn</span>
+                                <span class="mt-1 block break-all font-medium">linkedin.com/in/jongisapho-ndeya</span>
+                            </a>
+                            <a href="https://jongisapho.versel.app" target="_blank" rel="noreferrer" class="rounded-xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 transition hover:border-cyan-300 hover:bg-cyan-400/20">
+                                <span class="block text-xs uppercase tracking-wider text-cyan-200">Website</span>
+                                <span class="mt-1 block break-all font-medium">Jongisapho.versel.app</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div v-else>
+                        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">Choose your route</p>
+                        <h2 id="skills-modal-title" class="mt-3 text-3xl font-bold">How would you like to explore?</h2>
+                        <p class="mt-3 text-gray-300">Take the quick route through my CV or browse the skills section below.</p>
+                        <div class="mt-7 grid gap-3 sm:grid-cols-2">
+                            <a href="/Jongisapho-Ndeya-CV.pdf" download class="rounded-xl bg-blue-500 px-4 py-4 text-center font-semibold text-white transition hover:bg-blue-400">
+                                Download CV
+                                <span class="mt-1 block text-xs font-normal text-blue-100">PDF format</span>
+                            </a>
+                            <a href="#skills" @click="closeModal" class="rounded-xl border border-white/20 px-4 py-4 text-center font-semibold transition hover:border-cyan-300 hover:bg-cyan-400/10">
+                                Scroll to skills
+                                <span class="mt-1 block text-xs font-normal text-gray-300">See my toolkit</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </Transition>
+
     </section>
 </template>
 
 <script setup>
 
+import { onMounted, onUnmounted, ref } from 'vue';
 import { ArrowRightIcon, ArrowDownTrayIcon } from '@heroicons/vue/16/solid';
+
+const activeModal = ref(null);
+
+const openModal = (modal) => {
+    activeModal.value = modal;
+};
+
+const closeModal = () => {
+    activeModal.value = null;
+};
+
+const handleKeydown = (event) => {
+    if (event.key === 'Escape') closeModal();
+};
+
+onMounted(() => window.addEventListener('keydown', handleKeydown));
+onUnmounted(() => window.removeEventListener('keydown', handleKeydown));
 
 </script>
 
-<style></style>
+<style>
+.modal-enter-active,
+.modal-leave-active {
+    transition: opacity 0.2s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+    opacity: 0;
+}
+</style>
