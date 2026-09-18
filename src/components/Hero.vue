@@ -130,8 +130,14 @@ const handleKeydown = (event) => {
     if (event.key === 'Escape') closeModal();
 };
 
+const handleContactRequest = () => openModal('contact');
+
 onMounted(() => window.addEventListener('keydown', handleKeydown));
-onUnmounted(() => window.removeEventListener('keydown', handleKeydown));
+onMounted(() => window.addEventListener('open-contact-modal', handleContactRequest));
+onUnmounted(() => {
+    window.removeEventListener('keydown', handleKeydown);
+    window.removeEventListener('open-contact-modal', handleContactRequest);
+});
 
 </script>
 
