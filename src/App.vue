@@ -1,5 +1,6 @@
 <template>
   <div class="min-h-screen bg-white">
+    <Analytics />
     <Navbar />
     <Hero />
     <Services />
@@ -11,6 +12,7 @@
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Analytics } from '@vercel/analytics/vue';
 import Hero from './components/Hero.vue';
 import Navbar from './components/Navbar.vue';
 import Services from './components/Services.vue';
@@ -23,6 +25,7 @@ import { ref, nextTick, onMounted, onUnmounted } from 'vue';
 
 export default {
   components: {
+    Analytics,
     Navbar,
     Hero,
     Services,
